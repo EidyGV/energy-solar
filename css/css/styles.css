@@ -1,0 +1,45 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f8fafa78;
+    color: #343a40;
+}
+
+h1, h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #0099cc;
+}
+
+.hero {
+    background: url(../../imagenes/imagen1.jpg) center/cover no-repeat;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+ 
+
+#heroCarousel {
+    height: 100vh; /* Ocupa toda la pantalla */
+}
+
+.carousel-item img {
+    height: 100vh; /* Asegura que las imágenes llenen el espacio */
+    object-fit: cover; /* Ajusta la imagen sin distorsión */
+}
+
+.carousel-caption {
+    background: rgba(110, 111, 119, 0.927); /* Fondo semitransparente para el texto */
+    padding: 10px;
+    border-radius: 5px;
+}
