@@ -27,19 +27,19 @@ function calcularCeldasSolares() {
 
     // Calcular la cantidad de celdas solares necesarias
     var energiaPorDia = consumoDiario / (horasSolPico * eficienciaPanel);
-    var  consumomensualSolar = energiaPorDia * 30 ;
+    var consumomensualSolar = energiaPorDia * 30 ;
     var celdasNecesarias = Math.ceil(energiaPorDia); // Redondeamos hacia arriba
 
     // Mostrar los resultados
     document.getElementById("resultado1").innerHTML = "El número de Celdas solares necesarias: " + celdasNecesarias;
-    document.getElementById("resultado2").innerHTML = "El consumo promedio mensual de energía es: " + consumoPromedioMensual.toFixed(2) + " kWh";
-    document.getElementById("resultado3").innerHTML = "El consumo promedio mensual de energía con Celda solares: " + consumomensualSolar.toFixed(2) + " kWh";
+    document.getElementById("resultado2").innerHTML = "El consumo promedio mensual de energía sin Celdas solares: " + consumoPromedioMensual.toFixed(2) + " kWh";
+    document.getElementById("resultado3").innerHTML = "El consumo promedio mensual de energía con Celdas solares: " + consumomensualSolar.toFixed(2) + " kWh";
     document.getElementById("resultado4").innerHTML = "El consumo de energía por día sin Celda Solar es: " + consumoDiario.toFixed(2) + " kWh";
     document.getElementById("resultado5").innerHTML = "El consumo de energía por día con Celda Solar es: " + energiaPorDia.toFixed(2) + " kWh";
 
     // Datos para el gráfico de comparación Mensual
     const data = {
-        labels: ['Consumo sin Energía Solar','Consumo con Energía Solar'],
+        labels: ['Consumo son Energía Solar','Consumo sin Energía Solar'],
         datasets: [{
             label: 'Consumo de Energía (kWh)',
             data: [consumoPromedioMensual, consumomensualSolar],
