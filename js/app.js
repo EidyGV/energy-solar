@@ -45,38 +45,3 @@ function img4(){
         draggable: true
       });
   }
-
-
-
-// Creamos la función para visualizar el formulario
-
-function abrir(id){
-    // Aplíquemos metodos
-    document.getElementById(id).style.display = "block"
-}
-
-// Creamos la función de ocultar formualrio
-
-function ocultar(id){
-    // Aplíquemos metodos
-    document.getElementById(id).style.display = "none"
-}
-
-// Creamos la función para visualizar el boton Up
-
-// Guardamos la ubicación exacta del boton
-
-let up = document.querySelector('#up')
-
-window.addEventListener('scroll',btn_up)
-
-function btn_up(){
-    if(window.scrollY > 200){
-    console.log('%c 😮 Estas ubicado por encima de los 200px','background-color: acqua; color:blue');
-
-        up.classList.add('activar');
-    }else{
-        up.classList.remove('activar');
-    }
-
-}
