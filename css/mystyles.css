@@ -1,4 +1,4 @@
-.p {
+p {
     font-family: 'Poppins', sans-serif;
     color: black;
     text-align: justify;
@@ -6,14 +6,14 @@
     
 }
 
-.p2 {
+p2 {
     font-family: 'Poppins', sans-serif;
     color: rgb(4, 11, 100);
     text-align: center;
     padding: 5px 20px
 }
 
-.table {
+table {
     font-family: "Borel", serif;
     font-weight: 400;
     font-style: normal;
@@ -37,25 +37,25 @@
             font-size: 50px;
         }
 /* formato css de la web principal */
-.body {
+body {
     font-family: 'Open Sans', sans-serif;
     background-color: #f8fafa78;
     color: #343a40;
 }
 
-.h1, h2, h5 {
+h1, h2, h5 {
     font-family: 'Poppins', sans-serif;
     color: #0099cc;
 }
 
-.h3 {
+h3 {
     font-family: 'Poppins', sans-serif;
     color: #0099cc;
     text-align: justify;
     padding: 5px 20px
 }
 
-.a{
+a{
     text-align: justify;
     padding: 10px 20px  
 }
