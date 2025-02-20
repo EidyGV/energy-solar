@@ -83,49 +83,38 @@
     </section>
 
     <!-- Sección: Calculadora -->
-    <section id="calculator" class="container my-5">
-        <h2 class="text-center">Calcula un Ahorro Energético instalando 30% de tu consumo Mensual </h2>
-        <div class="row justify-content-center">
-            <div class="col-md-5">
-                <label for="energia">Consumo Actual (kWh/mes):</label>
-                <input type="number" id="energia" class="form-control" placeholder="Ingresa tu consumo">
-                <button class="btn btn-primary mt-3" onclick="calcularAhorro()">Calcular</button>
-                <p id="resultado" class="mt-3"></p>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-md-5">
-                <h2 class="text-center">Comparación del Consumo</h2>
-                <canvas id="energyChart"></canvas> <!-- Aquí irá el gráfico -->
-            </div>
-        </div>
-       <!-- aqui ingresaremos la otra calculadora  para conocer el numero de paneles solares  necesarios para cubrir tu consumo mensuaal -->
+<section id="calculator" class="container my-5">
         <h2 class="text-center">Calcula Numero de Celdas Solares Necesarias para cubrir tu Consumo</h2>
         <div class="row justify-content-center">
             <div class="col-md-5">
-                 <!--<h2>Calculadora de numero de Celdas Solares necesarias para cubrir tu consumo</h2>-->
-                 <label for="mes1">Consumo en el mes 1 (kWh/mes):</label>
-                 <input type="number" id="mes1" name="mes1"class="form-control" placeholder="Ingresa tu consumo">
-                 <label for="mes2">Consumo en el mes 2 (kWh/mes):</label>
-                 <input type="number" id="mes2" name="mes2"class="form-control" placeholder="Ingresa tu consumo">
-                 <label for="mes3">Consumo en el mes 3 (kWh/mes):</label>
-                 <input type="number" id="mes3" name="mes3"class="form-control" placeholder="Ingresa tu consumo">
-                 <label for="mes4">Consumo en el mes 4 (kWh/mes):</label>
-                 <input type="number" id="mes4" name="mes4"class="form-control" placeholder="Ingresa tu consumo">
-                 <label for="mes5">Consumo en el mes 5 (kWh/mes):</label>
-                 <input type="number" id="mes5" name="mes5"class="form-control" placeholder="Ingresa tu consumo"><br>
-                 <label for="tipoCelda">Tipo de celda solar:</label>
-                  <select id="tipoCelda" name="tipoCelda" class="form" >
-                     <option value="Monocristalina">Monocristalina</option>
-                     <option value="Policristalina">Policristalina</option>
-                     <option value="De película delgada">De película delgada</option>
-                  </select><br>
-                  <button class="btn btn-primary mt-3" type="button" onclick="calcularCeldasSolares()">Calcular</button>
-                  <p id="resultado1"class="mt-3"></p>
+                     <!-- Entradas para el consumo de energía mensual -->
+    <input type="number" id="mes1" placeholder="Consumo mes 1 (kWh)">
+    <input type="number" id="mes2" placeholder="Consumo mes 2 (kWh)">
+    <input type="number" id="mes3" placeholder="Consumo mes 3 (kWh)">
+    <input type="number" id="mes4" placeholder="Consumo mes 4 (kWh)">
+    <input type="number" id="mes5" placeholder="Consumo mes 5 (kWh)">
+    
+    <select id="tipoCelda">
+        <option value="Monocristalina - 20%">Monocristalina - 20%</option>
+        <option value="Policristalina - 15%">Policristalina - 15%</option>
+        <option value="Arseniuro de  Galio - 30%">Arseniuro de Galio - 30%</option>
+        <option value="De película delgada - 10%">De película delgada - 10%</option>
+    </select>
+    
+    <button onclick="calcularCeldasSolares()">Calcular</button>
+
+    <div id="resultado1"></div>
+    <div id="resultado2"></div>
+    <div id="resultado3"></div>
+    <div id="resultado4"></div>
+    <div id="resultado5"></div>
+
+    <canvas id="energyChart" width="400" height="200"></canvas>
+    <canvas id="energyChart1" width="400" height="200"></canvas>
             </div>
         </div>
-        
-    </section>
+</section>
+         
         
     <!-- Sección: Casos de Éxito -->
 
