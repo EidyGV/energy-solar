@@ -1,0 +1,96 @@
+p {
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    text-align: justify;
+    padding: 5px 20px
+    
+}
+
+p2 {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(4, 11, 100);
+    text-align: center;
+    padding: 5px 20px
+}
+
+table {
+    font-family: "Borel", serif;
+    font-weight: 400;
+    font-style: normal;
+        }
+
+.miclase{
+          color: red; 
+          font-size:  10px
+        }
+.miclase2{
+            color: rgb(255, 0, 179); 
+            font-size:  25px
+        }
+
+#miid{
+            color: blueviolet;
+            font-size: 50px;
+        }
+        #miid2{
+            color: rgb(37, 116, 0);
+            font-size: 50px;
+        }
+/* formato css de la web principal */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f8fafa78;
+    color: #343a40;
+}
+
+h1, h2, h5 {
+    font-family: 'Poppins', sans-serif;
+    color: #0099cc;
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #0099cc;
+    text-align: justify;
+    padding: 5px 20px
+}
+
+a{
+    text-align: justify;
+    padding: 10px 20px  
+}
+
+.hero {
+    background: url(../../imagenes/imagen1.jpg) center/cover no-repeat;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+ 
+
+#heroCarousel {
+    height: 100vh; /* Ocupa toda la pantalla */
+}
+
+.carousel-item img {
+    height: 100vh; /* Asegura que las imágenes llenen el espacio */
+    object-fit: cover; /* Ajusta la imagen sin distorsión */
+}
+
+.carousel-caption {
+    background: rgba(110, 111, 119, 0.927); /* Fondo semitransparente para el texto */
+    padding: 10px;
+    border-radius: 5px;
+}
