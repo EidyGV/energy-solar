@@ -39,7 +39,7 @@ function calcularCeldasSolares() {
 
     // Datos para el gráfico de comparación Mensual
     const data = {
-        labels: ['Consumo son Energía Solar','Consumo sin Energía Solar'],
+        labels: ['Consumo sin Energía Solar','Consumo con Energía Solar'],
         datasets: [{
             label: 'Consumo de Energía (kWh)',
             data: [consumoPromedioMensual, consumomensualSolar],
