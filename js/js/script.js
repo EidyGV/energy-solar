@@ -44,3 +44,36 @@ function calcularAhorro() {
     const ctx = document.getElementById('energyChart').getContext('2d');
     new Chart(ctx, config);
 }
+// esta es otra calculadora 
+
+//<script type="text/javascript">
+        function calcularCeldasSolares() {
+            var consumoMes1 = parseFloat(document.getElementById("mes1").value);
+            var consumoMes2 = parseFloat(document.getElementById("mes2").value);
+            var consumoMes3 = parseFloat(document.getElementById("mes3").value);
+            var consumoMes4 = parseFloat(document.getElementById("mes4").value);
+            var consumoMes5 = parseFloat(document.getElementById("mes5").value);
+            var tipoCelda = document.getElementById("tipoCelda").value;
+
+            var consumoPromedioMensual = (consumoMes1 + consumoMes2 + consumoMes3 + consumoMes4 + consumoMes5) / 5;
+            var consumoDiario = consumoPromedioMensual / 30;
+            var horasSolPico = 5; // Promedio de horas de sol pico al día
+            var eficienciaPanel;
+
+            if (tipoCelda === "Monocristalina") {
+                eficienciaPanel = 0.20; // Eficiencia promedio de paneles monocristalinos
+            } else if (tipoCelda === "Policristalina") {
+                eficienciaPanel = 0.15; // Eficiencia promedio de paneles policristalinos
+            } else if (tipoCelda === "De película delgada") {
+                eficienciaPanel = 0.10; // Eficiencia promedio de paneles de película delgada
+            } else {
+                eficienciaPanel = 0.15; // Eficiencia por defecto
+            }
+
+            // Calcular la cantidad de celdas solares necesarias
+            var energiaPorDia = consumoDiario / (horasSolPico * eficienciaPanel);
+            var celdasNecesarias = Math.ceil(energiaPorDia);
+
+            document.getElementById("resultado1").innerHTML = "El numero de Celdas solares necesarias: " + celdasNecesarias;
+        }
+   // </script>
